@@ -1,0 +1,133 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin position($position, $top, $left, $right, $bottom) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin half-circle {
+  position: absolute;
+  content: "";
+  border-bottom-right-radius: 350px;
+  border-top-right-radius: 350px;
+  border: 1px solid var(--half-circle-border-color);
+}
+
+@mixin icons-position($top, $left) {
+  top: $top;
+  left: $left;
+  z-index: 2;
+}
+
+@mixin icons-styling() {
+  font-size: 2.5rem;
+  padding: 10px;
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  background-color: var(--bg-color-dark);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  position: relative;
+  color: var(--white-color);
+
+  &:hover {
+    background-color: var(--white-color);
+    color: var(--bg-color-light);
+  }
+}
+
+@mixin top-half-circle($width, $left, $top) {
+  position: absolute;
+  content: "";
+  border-bottom-right-radius: 154px;
+  height: 90%;
+  width: $width;
+  top: $top;
+  left: $left;
+  border: 1px solid var(--half-circle-border-color);
+}
+
+@mixin input($height) {
+  height: $height;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--bg-color-extra-light);
+  border-radius: 20px;
+  color: var(--white-color);
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-family: var(--font-family-worksans);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+.button {
+  font-family: var(--font-family-Roboto);
+  font-weight: var(--fw-light);
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: var(--white-color);
+  border: 1px solid var(--btn-border-color);
+  border-radius: 30px;
+  padding: 19px 32px;
+  transition: all .3s ease;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button:hover {
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--btn-hover-bg-color);
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  color: var(--light-whiteColor);
+  font-family: var(--font-family-worksans);
+}
+
+.heading {
+  font-size: 5rem;
+  color: var(--white-color);
+  font-family: var(--font-family-Merriweather);
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 1.8rem;
+  font-family: var(--font-family-worksans);
+}
+
+.translate-right {
+  transform: translateX(100%);
+  opacity: .1;
+}
+
+.opacity {
+  opacity: .1;
+}
+
+
+.translate-up {
+  transform: translateY(200px);
+  opacity: .1;
+}
+
+.translate-contact {
+  transform: translateY(0px);
+  opacity: .1;
+}

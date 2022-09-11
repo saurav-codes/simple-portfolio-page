@@ -1,0 +1,259 @@
+.hero-banner-wrapper {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 650px;
+  margin-top: 100px;
+}
+
+.hero-banner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.hero-intro {
+  @include flex($direction: column, $justify: center, $align: flex-start);
+  transition: all 1s ease-in-out;
+  margin-top: -20px;
+  gap: 40px;
+  color: var(--white-color);
+  letter-spacing: 2px;
+
+  p,
+  h1 {
+    font-family: var(--font-family-Merriweather);
+  }
+
+  p {
+    font-weight: var(--fm-medium);
+    font-size: 5rem
+  }
+
+  h1 {
+    font-weight: var(--fm-light);
+    font-size: 6rem;
+    margin-top: -20px;
+  }
+
+  h2 {
+    color: var(--light-whiteColor);
+    font-size: 3rem;
+    font-weight: var(--fm-light);
+    font-family: var(--font-family-worksans);
+  }
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 830px;
+  transition: transform 1s ease-in-out;
+
+  .hero-image {
+    height: 100%;
+    z-index: 2;
+    margin-top: 100px;
+  }
+}
+
+.half-circle-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  width: 479px;
+  z-index: -1;
+  right: -170px;
+
+  &::after {
+    @include half-circle;
+    width: 75%;
+    height: 495px;
+    left: 0;
+    top: 185px;
+  }
+
+  &::before {
+    @include half-circle;
+    width: 50%;
+    height: 344px;
+    top: 266px;
+    left: 13px;
+  }
+}
+
+.social-icons {
+  position: absolute;
+  border: 1px solid var(--color-white);
+  height: 413px;
+  margin: auto;
+  top: 229px;
+  right: -14px;
+  width: 343px;
+  border-bottom-right-radius: 378px;
+  border-top-right-radius: 354px;
+  border: 1px solid var(--white-color);
+
+  .fa-github {
+    @include icons-position($top: -25px, $left: 161px);
+    @include icons-styling();
+  }
+
+  .fa-linkedin {
+    @include icons-position($top: 80px, $left: 240px);
+    @include icons-styling();
+    padding: 10px 12px;
+  }
+
+  .fa-twitter {
+    @include icons-position($top: 238px, $left: 206px);
+    @include icons-styling();
+  }
+}
+
+.top-left {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: -1;
+
+  &::after {
+    @include top-half-circle(100%, -2px, 0px);
+  }
+
+  &::before {
+    @include top-half-circle(90%, -2px, -13%);
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .hero-image-wrapper {
+    height: 600px;
+
+    .half-circle-image {
+      right: -237px;
+    }
+
+    .social-icons {
+      right: -92px;
+    }
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .hero-banner-wrapper {
+    height: auto;
+    margin-bottom: 45px;
+
+    .hero-banner {
+      flex-direction: column-reverse;
+      height: auto;
+      gap: 40px;
+
+
+      .hero-intro {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .hero-image-wrapper {
+    width: 400px;
+    margin: auto;
+
+    .half-circle-image {
+      right: -250px;
+      top: -53px;
+
+      &::before {
+        width: 50%;
+        height: 276px;
+      }
+
+      &::after {
+        width: 75%;
+        height: 432px;
+      }
+    }
+
+    .social-icons {
+      right: -79px;
+      top: 162px;
+      height: 375px;
+      width: 300px;
+
+      .fa-github {
+        top: -11px;
+      }
+
+      .fa-linkedin {
+        left: 206px;
+      }
+
+      .fa-twitter {
+        left: 153px;
+      }
+    }
+
+    .hero-image {
+      margin-top: 0px;
+    }
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  .hero-image-wrapper {
+    width: 330px;
+    height: 478px;
+
+    .half-circle-image {
+      display: none;
+    }
+
+    .social-icons {
+      right: -6px;
+      top: 29px;
+      height: 291px;
+      width: 192px;
+
+      .fa-github,
+      .fa-linkedin,
+      .fa-twitter {
+        padding: 8px;
+        font-size: 20px;
+      }
+
+      .fa-github {
+        top: -11px;
+        left: 80px;
+      }
+
+      .fa-linkedin {
+        padding: 8px 10px;
+        left: 112px;
+        top: 58px;
+      }
+
+      .fa-twitter {
+        left: 83px;
+        top: 167px;
+      }
+    }
+  }
+
+  .top-left {
+    width: 155px;
+    height: 114px;
+  }
+}

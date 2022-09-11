@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Saurav Sharma</title>
+  <!-- CSS and JS links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <style>
+    .project1::after {
+      background-image: url("./assets/images/project1-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .project2::after {
+      background-image: url("./assets/images/project2-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main content -->
+  <div class="main-wrapper">
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+      <div class="navbar">
+        <!-- logo -->
+        <div class="logo-container">
+          <p>saurav sharma</p>
+        </div>
+        <!-- nav-left-section -->
+        <div class="left-section">
+          <!-- nav-link -->
+          <div class="nav-links-wrapper">
+            <ul>
+              <li>
+                <a href='#home' class='nav-link'>Home</a>
+              </li>
+              <!-- <li>
+            <a href='#services' class='nav-link'>Services</a>
+          </li> -->
+              <li>
+                <a href='#skills' class='nav-link'>Skills</a>
+              </li>
+              <li>
+                <a href='#work' class='nav-link'>Work</a>
+              </li>
+              <li>
+                <a href='#blogs' class='nav-link'>Blog</a>
+              </li>
+              <li>
+                <a href='#contact' class='nav-link'>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- contact-btn -->
+          <div class="contact-btn">
+            <a href="#contact-wrapper">
+              <button class="button">Contact me</button>
+            </a>
+          </div>
+          <!-- menu-icon -->
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end-->
+
+    <!-- side navbar  -->
+    <div class="side-navbar-wrapper">
+      <div class="side-navbar">
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <!-- nav-links -->
+        <div>
+          <ul>
+            <li>
+              <a href='#home' class='nav-link'>Home</a>
+            </li>
+            <!-- <li>
+          <a href='#services' class='nav-link'>Services</a>
+        </li> -->
+            <li>
+              <a href='#skills' class='nav-link'>Skills</a>
+            </li>
+            <li>
+              <a href='#work' class='nav-link'>Work</a>
+            </li>
+            <li>
+              <a href='#blogs' class='nav-link'>Blog</a>
+            </li>
+            <li>
+              <a href='#contact' class='nav-link'>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero banner  -->
+    <div class="hero-banner-wrapper" id='hero-banner-wrapper'>
+      <div class="hero-banner">
+        <!-- intro-section -->
+        <div class="hero-intro translate-left">
+          <p>Hello! I'm</p>
+          <h1>Saurav sharma</h1>
+          <h2>Django web developer</h2>
+          <a target="_blank" href="https://drive.google.com/file/d/1qupkf1DP8pjCF9k_WNln34X9bjvw8TFK/view?usp=sharing">
+            <button class="button">Get Resume</button>
+          </a>
+        </div>
+        <!-- hero-image -->
+        <div id="home" class="hero-image-wrapper translate-right">
+          <img src="./assets/images/heroImage.webp" alt="img" class="hero-image">
+          <div class="half-circle-image"></div>
+          <div class="social-icons">
+            <a target="_blank" href="https://github.com/selftaughtdev-me" class='github'>
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/selftaughtdev-me" class='linkedin'>
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/selftaughtdev_" class='twitter'>
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- top-left -->
+      <div class="top-left"></div>
+    </div>
+    <!-- hero banner end  -->
+    <!-- skills-section  -->
+    <div id="skills" class="skills-wrapper translate-up" id="skills-wrapper">
+      <div class="skills-wrap">
+        <!-- skills-left -->
+        <div class="skills-left">
+          <div class="skills-text">
+            <p class="sub-heading">|| My Skills</p>
+            <p class="heading">My Skills Field Here</p>
+          </div>
+          <a href="">
+            <button class="button">Get Resume</button>
+          </a>
+        </div>
+        <!-- skills-right -->
+        <div class="skills-right translate-right">
+          <!-- skill-added by js -->
+        </div>
+      </div>
+    </div>
+    <!-- skill section end -->
+    <!-- project section -->
+    <div id="work" class="project-main-wrapper translate-up">
+      <div class="project-wrapper">
+        <div class="project-text">
+          <p class="sub-heading">|| Projects</p>
+          <p class="heading">My Projects Here</p>
+        </div>
+        <!-- projects -->
+        <div class="single-project-wrapper">
+          <!-- project1 -->
+          <div class='project translate-up'>
+            <div class="project-image-wrapper project1">
+              <img src="./assets/images/project1.png" alt="project-image" class='project-img' />
+            </div>
+            <div class="About-project">
+              <p>Email verifier</p>
+              <a href="https://emailverifier.co">
+                <button class='button'>Check out</button>
+              </a>
+            </div>
+          </div>
+          <!-- project2 -->
+          <div class='project'>
+            <div class="project-image-wrapper project2">
+              <img src="./assets/images/project2.png" alt="project-image" class='project-img' />
+            </div>
+            <div class="About-project">
+              <p>
+                Good meeting
+              </p>
+              <a href="https://goodmeeting.today">
+                <button class='button'>Check out</button>
+              </a>
+            </div>
+          </div>
+          <!-- project end -->
+        </div>
+      </div>
+    </div>
+    <!-- project section end -->
+    <!-- blog section -->
+    <div class="blog-main-wrapper translate-up">
+      <div class="blog-wrapper">
+        <div class="upper-section">
+          <p class="sub-heading">
+            || Blogs
+          </p>
+          <p class="heading">
+            My Blog
+          </p>
+        </div>
+        <!-- blogs -->
+        <div id="blogs" class="blogs">
+          <div class="single-blog">
+            <div class="blog-left-section">
+              <img src="./assets/images/blog.png" alt="blog-images" class="blog-image">
+              <div class="About-blog">
+                <p>Dated:31-04-2022</p>
+                <p>Django Blog</p>
+              </div>
+            </div>
+            <a href="">
+              <button class="button">Explore more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blog section end -->
+    <!-- contact section -->
+    <div id="contact" class="contact-main-wrapper translate-contact">
+      <div class="contact-wrapper">
+        <div class="contact-upper-section">
+          <p class="sub-heading">
+            Have a question ?
+          </p>
+          <p class="heading">
+            Contact Me
+          </p>
+        </div>
+        <!-- form -->
+        <form id="contact-form" action="" class="contact-middle-section">
+          <div class="contact-form-section">
+            <div class="input-container">
+              <input type='text' placeholder='Enter your name' name='name' class='input' autoComplete='off' value=''
+                required>
+              <p class='error'>enter your name</p>
+              <input type='email' placeholder='Enter your email' name='honeypot' class='input' value='' required
+                autoComplete='off'>
+              <p id="pot" class='error'>enter your email</p>
+            </div>
+            <input type="hidden" name="email">
+            <div class="textarea-container">
+              <textarea class='textarea' name="message" id="" rows="7" placeholder='message'></textarea>
+              <p class='error'>enter your message</p>
+            </div>
+          </div>
+          <button class="button">send</button>
+        </form>
+      </div>
+      <!-- contact-links -->
+      <div class="contact-link-main-wrapper translate-left">
+        <div class="contact-link-wrapper">
+          <div class="sections-container">
+            <div class="first-section">
+              <a href="mailto:info@selftaughtdev.me">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <p>email</p>
+            </div>
+            <div class="second-section">
+              <a target="_blank" href="https://github.com/selftaughtdev-me">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/selftaughtdev-me">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/selftaughtdev_">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact section end -->
+  </div>
+</body>
+<!-- JS scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/main.js" type="text/javascript">
+</script>
+<script src="./assets/js/contact.js"></script>
+
+</html>
